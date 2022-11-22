@@ -1,0 +1,72 @@
+package com.ME.Cloudd_Vendorr.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "cloud_vendor_info")
+
+
+public class CloudVendor {
+	@Id
+	private String vendorId;    //vendor_id
+	private String vendorName;  //vendor+name
+	private String vendorAddress;
+	private String vendorPhoneNumber;
+	
+	
+	public CloudVendor() {
+		super();
+	}
+
+
+	public CloudVendor(String vendorId, String vendorName, String vendorAddress, String vdendorPhoneNumber) {
+		super();
+		this.vendorId = vendorId;
+		this.vendorName = vendorName;
+		this.vendorAddress = vendorAddress;
+		this.vendorPhoneNumber = vdendorPhoneNumber;
+	}
+
+
+	public String getVendorId() {
+		return vendorId;
+	}
+
+
+	public void setVendorId(String vendorId) {
+		this.vendorId = vendorId;
+	}
+
+
+	public String getVendorName() {
+		return vendorName;
+	}
+
+
+	public void setVendorName(String vendorName) {
+		this.vendorName = vendorName;
+	}
+
+
+	public String getVendorAddress() {
+		return vendorAddress;
+	}
+
+
+	public void setVendorAddress(String vendorAddress) {
+		this.vendorAddress = vendorAddress;
+	}
+
+
+	public String getVdendorPhoneNumber() {
+		return vendorPhoneNumber;
+	}
+
+
+	public void setVdendorPhoneNumber(String vdendorPhoneNumber) {
+		this.vendorPhoneNumber = vdendorPhoneNumber;
+	}	
+
+}
